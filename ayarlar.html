@@ -1,0 +1,47 @@
+<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wifi Sifre Kirici / Ayarlar</title><meta name="description" content="Wifi Sifre Kirici Dumper ayarlar sayfası.">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://wifimobil.github.io/kirici.css"></head>
+<body class="home"><section class="hero"><div class="hero-inner container">
+<h2>Ayarlar</h2><div style="font-size:16px;text-align: left;">
+<p>Buradaki ayarlar her saldırı işleminden sonra sıfırlanmaktadır. Bu yüzden bir wifi ağının şifresini aldıktan sonra çevrenizdeki başka bir wifi ağına saldırmak istiyorsanız buradaki ayarları tekrar düzenlemeniz gerekir.</p>
+<strong>Handshake sıklığını seçin.</strong>(bu ayarı ne kadar çok seçerseniz şifre kırma ihtimaliniz o kadar artar. ancak işlem süresini de uzatır.)<br>
+<form class="w3-container w3-card-4">
+  <h2>Radio Buttons</h2>
+  <p>
+  <input class="w3-radio" type="radio" name="gender" value="male" checked>
+  <label>%50 HS Saldırısı</label></p>
+  <p>
+  <input class="w3-radio" type="radio" name="gender" value="female">
+  <label>%100 HS Saldırısı</label></p>
+  <p>
+  <input class="w3-radio" type="radio" name="gender" value="" disabled>
+  <label>Handshake Kapat (Çevrenizdeki ağlar WPA2 ile korunduğu için handshake kapatamazsınız.)</label></p>
+</form>
+<hr>
+<p><strong>E-Postanızı Yazın:</strong>
+<input type="text"><div class="w3-container"><div class="w3-light-grey"><div id="myBar" class="w3-container w3-red" style="height:24px;width:0%"></div></div>
+<p id="myP">Ayarlar uygulanıyor... <span id="demo">0</span> / 10</p>
+<button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">Şifremi Yolla</button> 
+</div>
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 50);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+      document.getElementById("myP").className = "w3-text-red w3-animate-opacity";
+      document.getElementById("myP").innerHTML = "E-Posta hesabınızı üstteki 'E Posta Aç' butonuna tıklayıp açmanız gerekli! Eğer o siteden e-posta açıp bize yolladıysanız şifre 48 saat içinde yollanır. O siteden açmadıysanız hiç şifre beklemeyin.";
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      var num = width * 1 / 10;
+      num = num.toFixed(0)
+      document.getElementById("demo").innerHTML = num;
+    }
+  }
+}
+</script>
+</p><hr><span style="color:red;">2- Uygulamamızın sorunsuz çalışması için uygulamamıza 5 yıldız vermeniz gerekiyor! Arada sırada bu sayfamızı ziyaret edip, şifrenizin e-postanıza yollanıp yollanmadığı ile ilgili bilgi alabilirsiniz.</span>
+<hr><a href="/" class="btn btn-ghost">ana sayfa</a></div></div></section></body></html>
