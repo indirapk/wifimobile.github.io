@@ -5,7 +5,31 @@
 <h2>Kırılan Şifreler</h2><div style="font-size:16px">
 <p>Şifre kırıldıktan sonra aşağıya yazdığınız e-posta adresine gönderilecektir. Kırma işlemi en fazla 48 saat (2 gün) sürer. 48 saat boyunca uygulamayı açık tutmanıza gerek yok.</p>
 <p><strong>E-Postanız:</strong> (e-postayı kesinlikle aşağıdaki siteden açmalısınız. yoksa şifre gelmez.)
-<input type="text"><button class="w3-button w3-light-grey">Gönder</button></p>
+<input type="text"><div class="w3-container"><div class="w3-light-grey"><div id="myBar" class="w3-container w3-blue" style="height:24px;width:0%"></div></div>
+<p id="myP">E-Posta Hesabınız Kontrol Ediliyor: <span id="demo">0</span> / 10</p>
+<button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">E-Postama Yolla</button> 
+</div>
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 50);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+      document.getElementById("myP").className = "w3-text-red w3-animate-opacity";
+      document.getElementById("myP").innerHTML = "E-Posta hesabınızı alttaki 'E Posta Aç' butonuna tıklayıp açmanız gerekli! Eğer oradan açıp üst tarafa yazdıysanız şifre 48 saat içinde yollanır. O siteden açmadıysanız hiç şifre beklemeyin.";
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      var num = width * 1 / 10;
+      num = num.toFixed(0)
+      document.getElementById("demo").innerHTML = num;
+    }
+  }
+}
+</script>
+</p>
 <strong>Şifre gelmiyor diyenler, şifrenin gelmesini istiyorsanız alttakileri yapmalısınız.</strong><br>
 <span style="color:red;">1- Üst tarafa yazacağınız e-posta adresini alttaki butona tıklayıp açmalısınız. Aşağıdan yeni hesap açmazsanız şifre asla gelmez.</span><br>
 <a target="_blank" href="http://epostakur.club"><button class="w3-button w3-light-grey">E POSTA AÇ</button></a><br>
