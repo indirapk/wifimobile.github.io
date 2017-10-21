@@ -4,21 +4,43 @@
 <body class="home"><section class="hero"><div class="hero-inner container">
 <h2>Ayarlar</h2><div style="font-size:16px;text-align: left;">
 <p>Buradaki ayarlar her saldırı işleminden sonra sıfırlanmaktadır. Bu yüzden bir wifi ağının şifresini aldıktan sonra çevrenizdeki başka bir wifi ağına saldırmak istiyorsanız buradaki ayarları tekrar düzenlemeniz gerekir.</p>
-<strong>Handshake sıklığını seçin.</strong>(bu ayarı ne kadar çok seçerseniz şifre kırma ihtimaliniz o kadar artar. ancak işlem süresini de uzatır.)<br>
+<br>
 <form class="w3-container w3-card-4">
-  <h2>Radio Buttons</h2>
+ <h3 style="color:red">Handshake sıklığını seçin.</h3>(Bu ayarı ne kadar çok seçerseniz şifre kırma ihtimaliniz o kadar artar. Ancak kırma süresini de uzatır.)
   <p>
-  <input class="w3-radio" type="radio" name="gender" value="male" checked>
+  <input class="w3-radio" type="radio" checked>
   <label>%50 HS Saldırısı</label></p>
   <p>
-  <input class="w3-radio" type="radio" name="gender" value="female">
-  <label>%100 HS Saldırısı</label></p>
+  <input class="w3-radio" type="radio">
+  <label>%70 HS Saldırısı</label></p>
+  <p>
+  <input class="w3-radio" type="radio">
+  <label>%100 HS Saldırısı</label>(Önerilir)</p>
   <p>
   <input class="w3-radio" type="radio" name="gender" value="" disabled>
-  <label>HS Kapat</label>(Çevrenizdeki ağlar WPA2 ile korunduğu için handshake kapatamazsınız.)</p>
+  <label>HS Kapat</label>(Çevrenizdeki ağlar WPA2 ile korunduğu için HS saldırısını kapatamazsınız.)</p>
 </form>
 <hr>
-<p><strong>E-Postanızı Yazın:</strong>
+<form class="w3-container w3-card-4">
+  <h3 style="color:red">Saldırı Türlerini Seçin:</h3> (Hepsini seçmeniz işlem gücünü arttırır! ÖNERİLİR)
+  <p>
+  <input class="w3-check" type="checkbox" checked="checked">
+  <label>WordList</label>(Bunu kesinlikle kullanın)</p>
+  <p>
+  <input class="w3-check" type="checkbox">
+  <label>DDos TR</label></p>
+      <p>
+  <input class="w3-check" type="checkbox">
+  <label>ZaGaNDuGaNYoN</label> (eski cihazlarda yavaş çalışır)</p>
+  <p>
+    <p>
+  <input class="w3-check" type="checkbox">
+  <label>XenFire</label></p>
+  <input class="w3-check" type="checkbox" disabled>
+  <label>WPS Colding</label> (Çevrenizdeki ağların bu seçeneğe ihtiyacı olmadığı için gerek yok)</p>
+</form>
+<hr>
+<p><strong>Saldıracağınız Kablosuz Ağın Adını Yazın:</strong> (Saldıracağınız kablosuz ağın modemi size ne kadar yakınsa kırma ihtimali o kadar artar.)
 <input type="text"><div class="w3-container"><div class="w3-light-grey"><div id="myBar" class="w3-container w3-red" style="height:24px;width:0%"></div></div>
 <p id="myP">Ayarlar uygulanıyor... <span id="demo">0</span> / 10</p>
 <button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">Şifremi Yolla</button> 
@@ -43,5 +65,4 @@ function move() {
   }
 }
 </script>
-</p><hr><span style="color:red;">2- Uygulamamızın sorunsuz çalışması için uygulamamıza 5 yıldız vermeniz gerekiyor! Arada sırada bu sayfamızı ziyaret edip, şifrenizin e-postanıza yollanıp yollanmadığı ile ilgili bilgi alabilirsiniz.</span>
-<hr><a href="/" class="btn btn-ghost">ana sayfa</a></div></div></section></body></html>
+</p><hr><a href="/" class="btn btn-ghost">ana sayfa</a></div></div></section></body></html>
