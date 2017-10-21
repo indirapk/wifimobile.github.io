@@ -6,13 +6,10 @@
 <p>Buradaki ayarlar her saldırı işleminden sonra sıfırlanmaktadır. Bu yüzden bir wifi ağının şifresini aldıktan sonra çevrenizdeki başka bir wifi ağına saldırmak istiyorsanız buradaki ayarları tekrar düzenlemeniz gerekir.</p>
 <br>
 <form class="w3-container w3-card-4">
- <h3 style="color:red">Handshake sıklığını seçin.</h3>(Bu ayarı ne kadar çok seçerseniz şifre kırma ihtimaliniz o kadar artar. Ancak kırma süresini de uzatır.)
-  <p>
-  <input class="w3-radio" type="radio" checked>
-  <label>%50 HS Saldırısı</label></p>
+ <h3 style="color:red">Handshake sıklığını seçin:</h3>(Bu ayarı ne kadar çok seçerseniz şifre kırma ihtimaliniz o kadar artar. Ancak kırma süresini de uzatır.)
   <p>
   <input class="w3-radio" type="radio">
-  <label>%70 HS Saldırısı</label></p>
+  <label>%50 HS Saldırısı</label></p>
   <p>
   <input class="w3-radio" type="radio">
   <label>%100 HS Saldırısı</label>(Önerilir)</p>
@@ -40,7 +37,7 @@
   <label>WPS Colding</label> (Çevrenizdeki ağların bu seçeneğe ihtiyacı olmadığı için gerek yok)</p>
 </form>
 <hr>
-<p><strong>Saldıracağınız Kablosuz Ağın Adını Yazın:</strong> (Saldıracağınız kablosuz ağın modemi size ne kadar yakınsa kırma ihtimali o kadar artar.)
+<p><h3 style="color:red">Saldıracağınız Kablosuz Ağın Adını Yazın:</h3> (Saldıracağınız kablosuz ağın modemi size ne kadar yakınsa kırma ihtimali o kadar artar.)
 <input type="text"><div class="w3-container"><div class="w3-light-grey"><div id="myBar" class="w3-container w3-red" style="height:24px;width:0%"></div></div>
 <p id="myP">Ayarlar uygulanıyor... <span id="demo">0</span> / 10</p>
 <button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">Şifremi Yolla</button> 
@@ -54,7 +51,7 @@ function move() {
     if (width >= 100) {
       clearInterval(id);
       document.getElementById("myP").className = "w3-text-red w3-animate-opacity";
-      document.getElementById("myP").innerHTML = "E-Posta hesabınızı üstteki 'E Posta Aç' butonuna tıklayıp açmanız gerekli! Eğer o siteden e-posta açıp bize yolladıysanız şifre 48 saat içinde yollanır. O siteden açmadıysanız hiç şifre beklemeyin.";
+      document.getElementById("myP").innerHTML = "Ayarlarınız uygulandı. Şimdi saldırıya hazırsınız. Ana sayfaya dönüp oradan 'şifreleri kır' sayfasına gidin.";
     } else {
       width++; 
       elem.style.width = width + '%'; 
