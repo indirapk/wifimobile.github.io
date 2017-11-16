@@ -1,28 +1,28 @@
 <html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ayarlar - Wifi Sifre Kirici Simulator</title><meta name="description" content="Wifi Sifre Kirici Dumper ayarlar sayfası.">
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://wifimobil.github.io/kirici.css"></head>
+<title>Settings - Wifi Hacker Simulator</title><meta name="description" content="Wifi Hacker Dumper settings page.">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://wifimobile.github.io/kirici.css"></head>
 <body class="home"><section class="hero"><div class="hero-inner container">
-<h2>Ayarlar</h2><div style="font-size:16px;text-align: left;">
-<p>Buradaki ayarlar her saldırı işleminden sonra sıfırlanmaktadır. Bu yüzden bir wifi ağının şifresini aldıktan sonra çevrenizdeki başka bir wifi ağına saldırmak istiyorsanız buradaki ayarları tekrar düzenlemeniz gerekir.</p>
+<h2>Settings</h2><div style="font-size:16px;text-align: left;">
+<p>These settings are reset after each attack. So if you want to attack another WiFi network in your home after you have received the password of a WiFi network, you need to re-configure the settings there.</p>
 <br>
 <form class="w3-container w3-card-4">
- <h3 style="color:red">Handshake sıklığını seçin:</h3>(Bu ayarı ne kadar çok seçerseniz şifre kırma ihtimaliniz o kadar artar. Ancak kırma süresini de uzatır.)
+ <h3 style="color:red">Select handshake frequency:</h3>(The more you choose this setting, the more likely you are to hack the password. But it also extends the hacking time.)
   <p>
   <input class="w3-radio" type="radio">
-  <label>%50 HS Saldırısı</label></p>
+  <label>%50 HS Attack</label></p>
   <p>
   <input class="w3-radio" type="radio">
-  <label>%100 HS Saldırısı</label>(Önerilir)</p>
+  <label>%100 HS Attack</label>(Recommended)</p>
   <p>
   <input class="w3-radio" type="radio" name="gender" value="" disabled>
-  <label>HS Kapat</label>(Çevrenizdeki ağlar WPA2 ile korunduğu için HS saldırısını kapatamazsınız.)</p>
+  <label>Close HS</label>(You can not turn off the HS attack because the networks in your area are protected by WPA2.)</p>
 </form>
 <hr>
 <form class="w3-container w3-card-4">
-  <h3 style="color:red">Saldırı Türlerini Seçin:</h3> (Hepsini seçmeniz işlem gücünü arttırır! ÖNERİLİR)
+  <h3 style="color:red">Select Attack Types:</h3> (Selecting all of them will increase your hacking power! RECOMMENDED)
   <p>
   <input class="w3-check" type="checkbox" checked="checked">
-  <label>WordList</label>(Bunu kesinlikle kullanın)</p>
+  <label>WordList</label>(Use it absolutely)</p>
   <p>
   <input class="w3-check" type="checkbox">
   <label>DDos TR</label></p>
@@ -32,19 +32,19 @@
 <label>InsWar</p></label>
       <p>
   <input class="w3-check" type="checkbox">
-  <label>ZaGaNDuGaNYoN</label> (eski cihazlarda yavaş çalışır)</p>
+  <label>ZaGaNDuGaNYoN</label> (slower on older devices)</p>
   <p>
     <p>
   <input class="w3-check" type="checkbox">
   <label>XenFire</label></p>
   <input class="w3-check" type="checkbox" disabled>
-  <label>WPS Colding</label> (Çevrenizdeki ağların bu seçeneğe ihtiyacı olmadığı için gerek yok)</p>
+  <label>WPS Colding</label> (There is no need for the networks in your neighborhood do not need this option)</p>
 </form>
 <hr>
-<p><h3 style="color:red">Saldıracağınız Kablosuz Ağın Adını Yazın:</h3> (Saldıracağınız kablosuz ağın modemi size ne kadar yakınsa kırma ihtimali o kadar artar.)
+<p><h3 style="color:red">Write Name of Wireless Network to Attack:</h3> (You will attack the wireless network, the closer you are to the modems, the more likely it is to break.)
 <input type="text"><div class="w3-container"><div class="w3-light-grey"><div id="myBar" class="w3-container w3-red" style="height:24px;width:0%"></div></div>
-<p id="myP">Ayarlar uygulanıyor... <span id="demo">0</span> / 10</p>
-<button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">Ayarları Uygula</button> 
+<p id="myP">Applying settings ...<span id="demo">0</span> / 10</p>
+<button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">Apply Settings</button> 
 </div>
 <script>
 function move() {
@@ -55,7 +55,7 @@ function move() {
     if (width >= 100) {
       clearInterval(id);
       document.getElementById("myP").className = "w3-text-red w3-animate-opacity";
-      document.getElementById("myP").innerHTML = "Ayarlarınız uygulandı. Şimdi saldırıya hazırsınız. Ana sayfaya dönüp oradan 'şifreleri kır' sayfasına gidin.";
+      document.getElementById("myP").innerHTML = "Your settings are applied. You are ready to attack now. Go back to the main page and go to the 'passwords' page.";
     } else {
       width++; 
       elem.style.width = width + '%'; 
@@ -66,4 +66,4 @@ function move() {
   }
 }
 </script>
-</p><hr><a href="/" class="btn btn-ghost">ana sayfa</a></div></div></section></body></html>
+</p><hr><a href="/" class="btn btn-ghost">home</a></div></div></section></body></html>
