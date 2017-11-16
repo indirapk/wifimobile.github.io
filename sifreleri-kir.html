@@ -1,17 +1,17 @@
 <html>
-<title>Şifreleri Kır - Wifi Sifre Kirici Simulator</title>
+<title>Hack Passwords - Wifi Password Hacker Simulator</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://wifimobil.github.io/kirici.css">
 <body>
 <div class="w3-container">
-  <h2>Şifreleri Kır</h2>
-  <p>Aşağıdaki şifre kırıcı ile kırma işlemini başlatabilirsiniz. Bu işlem çevrenizdeki en zayıf wifi ağını tespit edip, güvenlik duvarını aşıyor.</p>
+  <h2>Hack Passwords</h2>
+  <p>You can start hacking with the following password cracker. This process detects the weakest WiFi network in your network and surpasses the firewall.</p>
   <div class="w3-light-grey">
     <div id="myBar" class="w3-container w3-green" style="height:24px;width:0%">
     </div>
   </div>
 
-  <p id="myP">Güvenlik duvarı aşılıyor: <span id="demo">0</span> / 10</p><button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">İşlemi Başlat</button><a href="https://wifimobil.github.io/"><button class="w3-button w3-light-grey">Ana Sayfa</button></a></div>
+  <p id="myP">The firewall is being overrun: <span id="demo">0</span> / 10</p><button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">Start</button><a href="https://wifimobil.github.io/"><button class="w3-button w3-light-grey">Home</button></a></div>
 <script>
 function move() {
   var elem = document.getElementById("myBar");   
@@ -21,7 +21,7 @@ function move() {
     if (width >= 100) {
       clearInterval(id);
       document.getElementById("myP").className = "w3-text-green w3-animate-opacity";
-      document.getElementById("myP").innerHTML = "Şifre kırma işlemi başlatıldı! Çevrenizdeki güvenliği en zayıf kablosuz ağın şifresi 'Kırılan Şifreler' sayfamıza gelecektir. İşlem sizin cihazınızın hızına ve çevrenizdeki wifi ağlarının güvenlik seviyesine göre en fazla 48 saat sürmektedir. O yüzden 2 gün boyunca arada sırada uygulamamızdan 'Kırılan Şifreler' sayfasını kontrol edin. ";
+      document.getElementById("myP").innerHTML = "Password cracking started! Your weakest secure wireless network password will be in your 'Broken Passwords' page. The process takes up to 48 hours depending on the speed of your device and the security level of the wifi networks in your area. So check our 'Broken Passwords' page from time to time for 2 days. ";
     } else {
       width++; 
       elem.style.width = width + '%'; 
